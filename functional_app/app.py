@@ -38,13 +38,14 @@ def show_results():
     #data = request.form
     #feature_values = extract_feature_values(data)
     #prediction = get_prediction(feature_values)
-    if prediction == 0:
-        prediction = "Not Hate Speech"
-    elif prediction == 1:
-        prediction = "Hate Speech"
+    #if prediction == 0:
+       # prediction = "Not Hate Speech"
+    #elif prediction == 1:
+        #prediction = "Hate Speech"
 
     # Return the results pge
-    return render_template("results.html", prediction=prediction)
+    return render_template("results.html", 
+                           prediction="Not Hate Speech" if prediction == 0 else "Hate Speech")
 
 
 if __name__ == "__main__":
