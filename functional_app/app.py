@@ -45,7 +45,7 @@ def show_results():
 
     # Return the results pge
     return render_template("results.html", 
-                           prediction="Not Hate Speech" if prediction == 0 else "Hate Speech")
+                           prediction="Not Hate Speech" if prediction == "0" else "Hate Speech")
 
 
 if __name__ == "__main__":
