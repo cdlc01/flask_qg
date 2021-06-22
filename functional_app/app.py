@@ -34,10 +34,10 @@ def show_results():
     """ Display the results page with the provided prediction """
     
     # Extract the prediction from the URL params
-    #prediction = request.args.get("prediction")
-    data = request.form
-    feature_values = extract_feature_values(data)
-    prediction = get_prediction(feature_values)
+    prediction = request.args.get("prediction")
+    #data = request.form
+    #feature_values = extract_feature_values(data)
+    #prediction = get_prediction(feature_values)
 
     # Return the results pge
     return render_template("results.html", prediction=prediction)
