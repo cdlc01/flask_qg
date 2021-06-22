@@ -23,5 +23,7 @@ def extract_feature_values(data):
             values.append(1)
         else:
             values.append(0)
+            
+    new_values = [values]
     
-    return pd.DataFrame(values, columns=EXPECTED_FEATURES)
+    return pd.DataFrame(new_values, columns=EXPECTED_FEATURES)
