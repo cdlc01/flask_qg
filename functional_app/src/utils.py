@@ -17,6 +17,11 @@ def extract_feature_values(data):
     
     # loop that treats different features differently
     
-    values = [int(data[feature]) for feature in EXPECTED_FEATURES]
+    values = []
+    for feature in EXPECTED_FEATURES:
+        if feature in data:
+            values.append(1)
+        else:
+            values.append(0)
     
     return pd.DataFrame(values, columns=EXPECTED_FEATURES)
