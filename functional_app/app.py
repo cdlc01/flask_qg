@@ -34,7 +34,7 @@ def show_results():
     """ Display the results page with the provided prediction """
     
     # Extract the prediction from the URL params
-    prediction = request.args.get("prediction")
+    #prediction = request.args.get("prediction")
 
     # Return the results pge
     return render_template("results.html", prediction=prediction)
