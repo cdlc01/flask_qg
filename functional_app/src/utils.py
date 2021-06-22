@@ -21,4 +21,4 @@ def extract_feature_values(data):
     
     #return pd.DataFrame(values, columns=EXPECTED_FEATURES)
     
-    return data
+    return [data]
