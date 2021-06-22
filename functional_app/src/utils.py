@@ -1,10 +1,9 @@
 import pandas as pd
-import requests
 
 def extract_feature_values(data):
     """ Given a params dict, return the values for feeding into a model"""
     
-    tweet = requests.form['tweet']
+    tweet = data['tweet']
     
     # Replace these features with the features for your model. They need to 
     # correspond with the `name` attributes of the <input> tags
