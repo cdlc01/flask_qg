@@ -35,6 +35,7 @@ def show_results():
     
     # Extract the prediction from the URL params
     #prediction = request.args.get("prediction")
+    feature_values = extract_feature_values(data)
     prediction = get_prediction(feature_values)
 
     # Return the results pge
